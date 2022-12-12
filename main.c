@@ -9,5 +9,5 @@
 
 int main() {
     char str1[] = "abcd", str2[] = "abCd", str3[] = "abcd";
-    printf("result: %d", strcmp(str1, str2));
+    printf("result: %d\n", notstd_strcmp(str1, str2));
 }
