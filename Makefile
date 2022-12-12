@@ -13,4 +13,4 @@ string.o: string.c string.h
 	gcc -c -o $@ $<
 
 clean:
-	rm -f *.o $(TARGET)
+	rm -f *.o *.a $(TARGET)

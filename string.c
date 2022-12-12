@@ -3,6 +3,8 @@
  *  Date: 12/11/22
  *  String helper functions, partner to string.h  */
 
+
+#include <stddef.h>
 #include "string.h"
 
 int notstd_strcmp(const char *str1, const char *str2) {
@@ -16,4 +18,12 @@ int notstd_strcmp(const char *str1, const char *str2) {
         str1++, str2++;
     }
     return 0;
+}
+
+size_t notstd_strlen(const char *str) {
+    int index = 0;
+    while(*str != '\0') {
+        str++, index++;
+    }
+    return index;
 }
