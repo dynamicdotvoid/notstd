@@ -9,11 +9,17 @@
 #include "string.h"
 
 int main() {
-    /* notstd_strcmp example
-    char str1[] = "abcd", str2[] = "abCd", str3[] = "abcd";
+    /* notstd_strcmp
+    char str1[] = "notstd_strcmp", str2[] = "strcmp", str3[] = "notstd_strcmp";
     printf("result: %d\n", notstd_strcmp(str1, str2)); */
 
-    /* notstd_strlen */
+    /* notstd_strcpy */
+    char sourceString[] = "notstd_strcpy";
+    char destinationString[100];
+    notstd_strcpy(destinationString, sourceString);
+    printf("destinationString: %s\n", destinationString);
+
+    /* notstd_strlen
     char testString[] = "notstd_strlen";
-    printf("result: %zd\n", notstd_strlen(testString));
+    printf("result: %zd\n", notstd_strlen(testString)); */
 }

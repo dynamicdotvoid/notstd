@@ -24,3 +24,13 @@ int notstd_strcmp(const char *str1, const char *str2);
  * str: the string to find the length of
  */
 size_t notstd_strlen(const char *str);
+
+/*
+ * Copies the string pointed to by src to dest
+ *
+ * src: the source string to copy
+ * dest: the destination of the string copy
+ *
+ * return: pointer to string *dest
+ */
+char *notstd_strcpy(char *dest, const char *src);
